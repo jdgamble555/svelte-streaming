@@ -7,7 +7,7 @@
 
 <main class="flex flex-col justify-center items-center mt-5 gap-3">
   <h1 class="text-2xl">Todo</h1>
-  {#await data.streamed.todos}
+  {#await data.todos}
     <Loading />
   {:then todo}
     <h2>{todo.title}</h2>

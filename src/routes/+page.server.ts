@@ -12,8 +12,6 @@ const getTodo = async () => {
 
 export const load: PageServerLoad = () => {
     return {
-        streamed: {
-            todos: getTodo()
-        }
+        todos: getTodo()
     };
 };
